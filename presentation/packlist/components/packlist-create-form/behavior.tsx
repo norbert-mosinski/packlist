@@ -19,10 +19,11 @@ export function Behavior()
       });
     
       const onSubmit = (data: FormData) => {
-        console.log("Form Submitted:", data);
+        alert("Form Submitted:" + JSON.stringify(data));
       };
 
       const nameProps: PTextInputProps = {
+        id: 'name',
         ...register('name')
       };
 

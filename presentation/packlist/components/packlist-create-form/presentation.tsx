@@ -1,3 +1,4 @@
+"use client"
 import { PTextInput, PTextInputProps } from "@/presentation/shared/components/text-input";
 import { PText } from "@/presentation/shared/components/text";
 import React from 'react';
@@ -20,7 +21,7 @@ export function Presentation(props: Props) {
       <div>
         <PText appearence="input-label">Name</PText>
         <PTextInput {...props.nameProps}></PTextInput>
-        {props.errors.name && <PInputErrorMessage></PInputErrorMessage>}
+        {props.errors.name && <PInputErrorMessage >{props.errors.name}</PInputErrorMessage>}
       </div>
       <PButton type="submit">Submit</PButton>
     </PForm>

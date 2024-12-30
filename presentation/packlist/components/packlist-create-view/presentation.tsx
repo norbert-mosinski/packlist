@@ -1,4 +1,4 @@
-import { View } from "@/presentation/shared/components/view";
+import { PView } from "@/presentation/shared/components/view";
 import { DPacklistCreateForm } from "../packlist-create-form";
 
 export interface Props {
@@ -6,7 +6,7 @@ export interface Props {
 }
 
 export async function Presentation(props: Props) {
-    return <View>
+    return <PView>
         <DPacklistCreateForm></DPacklistCreateForm>
-    </View>
+    </PView>
 }

@@ -1,5 +1,5 @@
-import { PacklistCreateView } from "@/presentation/packlist/components/packlist-create-view";
+import { DPacklistCreateView } from "@/presentation/packlist/components/packlist-create-view";
 
 export default async function Page() {
-    return <PacklistCreateView></PacklistCreateView>
+    return <DPacklistCreateView></DPacklistCreateView>
 }
