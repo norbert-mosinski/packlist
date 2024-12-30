@@ -5,6 +5,7 @@ import { Presentation } from "./presentation";
 import { z } from 'zod';
 import { PTextInputProps } from "@/presentation/shared/components/text-input";
 import { PPacklistCreateFormProps } from ".";
+import { createPacklist } from "@/application/packlist/actions/create-packlist";
 
 
 const formSchema = z.object({
@@ -25,6 +26,11 @@ export function Behavior()
         ...register('name')
       };
       const onSubmit = (data: FormData) => {
+        const payload = {
+          ...data,
+          items: []
+        };
+        createPacklist(payload);
         alert("Form Submitted:" + JSON.stringify(data) + JSON.stringify(nameProps));
       };
 
