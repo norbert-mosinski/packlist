@@ -1,3 +1,4 @@
+"use client";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Presentation } from "./presentation";
@@ -18,13 +19,13 @@ export function Behavior()
         resolver: zodResolver(formSchema),
       });
     
-      const onSubmit = (data: FormData) => {
-        alert("Form Submitted:" + JSON.stringify(data));
-      };
-
+      
       const nameProps: PTextInputProps = {
         id: 'name',
         ...register('name')
+      };
+      const onSubmit = (data: FormData) => {
+        alert("Form Submitted:" + JSON.stringify(data) + JSON.stringify(nameProps));
       };
 
       const presentationErrors: PPacklistCreateFormProps['errors'] = {
