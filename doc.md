@@ -1,5 +1,6 @@
 **TODO** 
 - move it into corresponding place
+- intercommunitation example
 
 # Example React Project Architecture
 
