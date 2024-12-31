@@ -10,11 +10,13 @@ export class PacklistRepository {
         this.table = new Table('packlist');
     }
 
+    // repository handles id, data access, valiation on data level
     async create(payload: PacklistCreatePayload)
     {
         const createdAt = new Date().toISOString();
         const stringService = new StringService();
 
+        // todo validation
         const packlist: Packlist = {
             id: stringService.generateUUID(),
             name: payload.name,

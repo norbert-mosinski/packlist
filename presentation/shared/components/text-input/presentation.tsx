@@ -3,6 +3,7 @@ import { ButtonHTMLAttributes, HtmlHTMLAttributes, InputHTMLAttributes, PropsWit
 export interface Props extends InputHTMLAttributes<HTMLInputElement> {
 }
 
+// Wrapper for native element to allow global styling
 export const Presentation = forwardRef<HTMLInputElement, PTextInputProps>((props: Props, ref) => {
     const {...inputProps} = props;
 

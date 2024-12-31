@@ -4,6 +4,7 @@ export interface Props extends PropsWithChildren, HtmlHTMLAttributes<HTMLFormEle
 
 }
 
+// Wrapper for native element to allow global styling
 export function Presentation(props: Props) {
     const {children, ...formProps} = props;
 

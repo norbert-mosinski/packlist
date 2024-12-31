@@ -5,7 +5,9 @@ export interface Props {
 
 }
 
-export async function Presentation(props: Props) {
+// component is kept serverside as no js needed
+// data version for PacklistCreateForm is used.
+export function Presentation(props: Props) {
     return <PView>
         <a href="/packlist">Back</a>
         <DPacklistCreateForm></DPacklistCreateForm>

@@ -14,6 +14,9 @@ export interface Props {
   errors: ErrorBag;
 }
 
+// Pure UI events and data are being defined and displayed here
+// All events are fired back to behavior component through callbacks,
+// no handling happens here in order to keep the behavior out of the presentation. 
 export function Presentation(props: Props) {
   return (
     <PForm onSubmit={props.onSubmit}>

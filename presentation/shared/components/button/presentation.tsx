@@ -4,6 +4,7 @@ export interface Props extends PropsWithChildren, ButtonHTMLAttributes<HTMLButto
     appearence? : 'primary'
 }
 
+// Wrapper for native element to allow global styling
 export function Presentation(props: Props) {
     const className = '';
     const {appearence, ...buttonProps} = props;
