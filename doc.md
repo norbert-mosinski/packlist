@@ -93,7 +93,11 @@ Components can communicate via **Zustand** (for global state) and **Mitt** (for 
 - Detailed explanations about the overall project structure and libraries used.
 
 ## CSS
-For each color there is a definition in tailwindcss.ts in order to make the theme easy customazible. **TODO** text, fonts, spacing, classname as props or single arguments.
+For each **color** there is a definition in tailwindcss.ts. Colors are overwritten by custom colors, as most of the colors are not needed.
+**Text** sizes are being customized according to the sizes that are needed.
+**Fonts** are overwritten.
+**Spacing** can be extended.
+Further **styling** over classname property defained as props. Limit options by configuring tailwindconfig and creating specific components.
 
 ## Differences if Using Pure React (Without Next.js)
 
