@@ -5,7 +5,7 @@
 
 This is an example project to demonstrate the recommended architecture for middle to large-sized projects in React. While this architecture is based on Next.js, it can easily be adapted to pure React or React Native. The main differences will be explained.
 
-**Follow app/packlist/create/page.tsx for further comments which explain further this documentation**s
+**Follow app/packlist/create/page.tsx for further comments which explain further this documentation**
 
 ## Setup
 
