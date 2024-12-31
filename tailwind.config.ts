@@ -6,6 +6,7 @@ const config: Config = {
     './presentation/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  // todo overwrite colors
   theme: {
     extend: {
       backgroundImage: {
