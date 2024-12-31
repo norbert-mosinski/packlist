@@ -26,6 +26,7 @@ export function Behavior()
         ...register('name')
       };
       const onSubmit = (data: FormData) => {
+        // todo implement and handler
         const payload = {
           ...data,
           items: []
@@ -34,8 +35,9 @@ export function Behavior()
         alert("Form Submitted:" + JSON.stringify(data) + JSON.stringify(nameProps));
       };
 
+      // todo factory
       const presentationErrors: PPacklistCreateFormProps['errors'] = {
-        name: errors.name?.message
+        name: errors.name?.message ? [errors.name?.message] : []
       };
 
     return <Presentation nameProps={nameProps} 

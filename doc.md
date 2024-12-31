@@ -74,13 +74,14 @@ layer -> feature (what a user can do, not what can see) -> file type -> file.
 - **Managers**: Perform operations on a given object, providing convenience functions.
 - **Entities/Models**: Data models that always have an ID.
 - **Schemas**: Define data structures and validation rules, separated where necessary.
+- **Props/Types**: Define globally if used across the app, otherwise in same file. 
 
 ## Component Structure
 
 Each component has its own folder with the following structure:
 components -> user -> index.ts, data.tsx, behavior.tsx, presentation.tsx
 
-This structure allows the **presentation** part of the component to be reused with different **behavior** and **data**. If behavior is shared across components, it can be moved to hooks for reusability.
+This structure allows the **presentation** part of the component to be reused with different **behavior** and **data**. If behavior is shared across components, it can be moved to hooks for reusability. Props are defined in same file but exported in index.ts if needed.
 
 ## Communication Between Components
 
