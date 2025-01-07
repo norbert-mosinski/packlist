@@ -1,6 +1,7 @@
 import { Entity } from "@/data/shared/types/entity";
 
-export interface Packlist extends Entity
+export interface PacklistItem extends Entity
 {
     name: string;
+    packlistId: string;
 }

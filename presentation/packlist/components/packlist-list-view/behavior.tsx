@@ -1,6 +1,11 @@
+import { Packlist } from "@/application/packlist/models/packlist";
 import { Presentation } from "./presentation";
 
-export function Behavior()
+export type Props = {
+    packlists: Packlist[];
+};
+
+export function Behavior(props: Props)
 {
-    return <Presentation></Presentation>
+    return <Presentation packlists={props.packlists}></Presentation>
 }
