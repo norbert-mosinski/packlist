@@ -1,3 +1,4 @@
+"use server"
 import { PacklistRepository } from "@/data/packlist/repositories/packlist-repository";
 import { z } from "zod";
 
