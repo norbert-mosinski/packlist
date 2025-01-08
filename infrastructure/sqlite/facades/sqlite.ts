@@ -20,7 +20,9 @@ export class Sqlite implements PacklistStorage
         throw new Error('Method not implemented.');
     }
     read<MaybeId extends string>(table: string, id?: MaybeId | undefined): MaybeId extends string ? PacklistStorageEntry | null : PacklistStorageEntry[] {
-        throw new Error('Method not implemented.');
+        const data = this.sqlite.all('SELECT * FROM ' + table, []);
+
+        return data;
     }
 
 }
