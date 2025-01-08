@@ -39,7 +39,7 @@ export class LocalStorage implements PacklistStorage
           return entries;
     }
 
-    private readByKey(key: string): Entry | null
+    private readByKey(key: string): PacklistStorageEntry | null
     {
         const entryString = localStorage.getItem(key);
 

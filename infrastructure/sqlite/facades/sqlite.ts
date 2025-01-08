@@ -25,7 +25,7 @@ export class Sqlite implements PacklistStorage
 
 }
 
-
+// TODO remove
 // Initialize the database schema (create table if it doesn't exist)
 function initializeDB() {
   db.prepare(`
@@ -62,5 +62,3 @@ function main() {
   const users = getUsers();
   console.log(users);
 }
-
-main();
