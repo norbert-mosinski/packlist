@@ -1,11 +1,11 @@
 import { PacklistStorage } from '@/infrastructure/packlist-storage/types/packlist-storage';
 import { PacklistStorageEntry } from '@/infrastructure/packlist-storage/types/packlist-storage-entry';
-import Database from 'better-sqlite3';
+import sqlite3 from 'sqlite3';
 
-const dbFile = './packlist.db';
+const dbFile = __dirname + '/packlist.sqlite';
 
 // Open or create the database
-const sqlite = new Database(dbFile);
+const sqlite = new sqlite3.Database(dbFile);
 
 export class Sqlite implements PacklistStorage
 {
@@ -24,6 +24,7 @@ export class Sqlite implements PacklistStorage
     }
 
 }
+
 
 // TODO remove
 // Initialize the database schema (create table if it doesn't exist)
