@@ -1,1 +1,0 @@
-export type PacklistStorageEntry = Record<string | number | symbol, unknown> & {id: string};

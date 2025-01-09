@@ -1,2 +1,2 @@
-## Packlist
-A packlist. Has many packlist items.
+## List
+A list. Has many list items.
